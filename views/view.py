@@ -1,5 +1,6 @@
-from controllers.controller import inserir_inicio, inserir_fim, inserir_depois, inserir_antes, inserir_indice, \
-    verificar_pais, eliminar_inicio, eliminar_fim, eliminar_pais, verificar_numero
+import self as self
+
+from controllers.controller import *
 
 
 def run():
@@ -8,7 +9,7 @@ def run():
             scan = input().split()
             match scan[0].upper():
                 case "RPI":
-                    inserir_inicio(scan)
+                    inserir_inicio(scan, lista)
                 case "RPF":
                     inserir_fim(scan)
                 case "RPDE":
@@ -27,8 +28,7 @@ def run():
                     eliminar_fim()
                 case "EP":
                     eliminar_pais(scan)
+                case _:
                     pass
-                case "":
-                    break
     except:
         pass
