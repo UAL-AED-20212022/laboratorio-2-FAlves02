@@ -30,5 +30,6 @@ def run():
                     eliminar_pais(scan)
                 case _:
                     pass
+                
     except:
         pass
