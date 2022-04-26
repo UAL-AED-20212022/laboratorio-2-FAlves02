@@ -1,6 +1,8 @@
-from models import LinkedList
+import readline
 
-lista = LinkedList
+from models.LinkedList import LinkedList
+
+lista = LinkedList()
 
 
 def inserir_inicio(scan):
@@ -41,3 +43,9 @@ def eliminar_fim():
 
 def eliminar_pais(scan):
     lista.delete_element_by_value(scan[1])
+
+
+def printlist():
+    i = list.start_node
+    while i is not None:
+        next = i.ref

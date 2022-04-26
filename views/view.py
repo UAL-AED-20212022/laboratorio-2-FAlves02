@@ -1,6 +1,7 @@
 from controllers.controller import inserir_inicio, inserir_fim, inserir_depois, inserir_antes, inserir_indice, \
     verificar_pais, eliminar_inicio, eliminar_fim, eliminar_pais, verificar_numero
 
+
 def run():
     try:
         while True:
