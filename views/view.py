@@ -19,7 +19,7 @@ def run():
                 case "VNE":
                     print(f"O número de elementos são {verificar_numero()}")
                 case "VP":
-                    if not verificar_pais(scan) or verificar_pais() is None:
+                    if not verificar_pais(scan) or verificar_pais(scan) is None:
                         print(f"O país {scan[1]} não se encontra na lista.")
                     else:
                         print(f"O país {scan[1]} encontra-se na lista.")
