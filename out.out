@@ -9,13 +9,13 @@ Argentina
 Portugal  
 Espanha  
 O número de elementos são 4
-<models.Node.Node object at 0x000001CEF70562F0>
+<models.Node.Node object at 0x000002686D0562F0>
 Chile  
 Argentina  
 Portugal  
 Espanha  
 Franca  
-<models.Node.Node object at 0x000001CEF70562F0>
+<models.Node.Node object at 0x000002686D0562F0>
 Chile  
 Argentina  
 Portugal  
@@ -29,3 +29,22 @@ Portugal
 Italia  
 Espanha  
 Franca  
+China  
+Japao  
+Chile  
+Argentina  
+Portugal  
+Italia  
+Espanha  
+Franca  
+China  
+Japao  
+Angola  
+Chile  
+Argentina  
+Portugal  
+Italia  
+Espanha  
+Franca  
+O número de elementos são 9
+Item found

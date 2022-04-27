@@ -28,7 +28,7 @@ def inserir_antes(scan):
 
 
 def inserir_indice(scan):
-    lista.insert_at_index(scan[2], scan[1])
+    lista.insert_at_index(int(scan[2]), scan[1])
     lista.traverse_list()
     return lista
 
