@@ -1,5 +1,3 @@
-import self as self
-
 from controllers.controller import *
 
 
@@ -19,9 +17,12 @@ def run():
                 case "RPII":
                     inserir_indice(scan)
                 case "VNE":
-                    verificar_numero()
+                    print(f"O número de elementos são {verificar_numero()}")
                 case "VP":
-                    verificar_pais(scan)
+                    if not verificar_pais(scan) or verificar_pais() is None:
+                        print(f"O país {scan[1]} não se encontra na lista.")
+                    else:
+                        print(f"O país {scan[1]} encontra-se na lista.")
                 case "EPE":
                     eliminar_inicio()
                 case "EUE":
@@ -30,6 +31,6 @@ def run():
                     eliminar_pais(scan)
                 case _:
                     pass
-                
+
     except:
         pass

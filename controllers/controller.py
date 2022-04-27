@@ -34,29 +34,27 @@ def inserir_indice(scan):
 
 
 def verificar_numero():
-    lista.get_count()
-    lista.traverse_list()
-    return lista
+    return lista.get_count()
 
 
 def verificar_pais(scan):
-    lista.search_item(scan[1])
-    lista.traverse_list()
-    return lista
+    return lista.search_item(scan[1])
+    # lista.traverse_list()
 
 
 def eliminar_inicio():
     lista.delete_at_start()
-    lista.traverse_list()
+    # lista.traverse_list()
     return lista
 
 
 def eliminar_fim():
     lista.delete_at_end()
-    lista.traverse_list()
+    # lista.traverse_list()
+    return lista
 
 
 def eliminar_pais(scan):
     lista.delete_element_by_value(scan[1])
-    lista.traverse_list()
+    # lista.traverse_list()
     return lista
