@@ -19,7 +19,8 @@ def run():
                 case "VNE":
                     print(f"O número de elementos são {verificar_numero()}")
                 case "VP":
-                    if not verificar_pais(scan) or verificar_pais(scan) is None:
+                    x = verificar_pais(scan)
+                    if not x or x is None:
                         print(f"O país {scan[1]} não se encontra na lista.")
                     else:
                         print(f"O país {scan[1]} encontra-se na lista.")
@@ -30,10 +31,11 @@ def run():
                     x = eliminar_fim()
                     print(f"O país {x} foi eliminado da lista")
                 case "EP":
-                    eliminar_pais(scan)
-                    if not verificar_pais(scan) or verificar_pais(scan) is None:
+                    x = verificar_pais(scan)
+                    if not x or x is None:
                         print(f"O país {scan[1]} não se encontra na lista.")
                     else:
+                        eliminar_pais(scan)
                         print(f"O país {scan[1]} foi eliminado da lista")
                 case _:
                     pass

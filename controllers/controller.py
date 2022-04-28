@@ -45,17 +45,15 @@ def verificar_pais(scan):
 def eliminar_inicio():
     x = lista.start_node
     lista.delete_at_start()
-    # lista.traverse_list()
     return x
+
 
 def eliminar_fim():
     x = lista.get_last_node()
     lista.delete_at_end()
-    # lista.traverse_list()
     return x
 
 
 def eliminar_pais(scan):
     lista.delete_element_by_value(scan[1])
-    # lista.traverse_list()
     return lista
